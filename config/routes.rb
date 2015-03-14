@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   post "post_tweet/submit"
 
-  root 'post_tweet#index'
+  root :to => redirect('/post_tweet/index')
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
