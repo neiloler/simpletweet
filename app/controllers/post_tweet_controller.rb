@@ -4,6 +4,6 @@ class PostTweetController < ApplicationController
 
   def submit
     puts "BLASTED!"
-    render "post_tweet/index"
+    redirect_to :action => "index"
   end
 end
