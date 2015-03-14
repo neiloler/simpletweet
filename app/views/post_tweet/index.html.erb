@@ -1,17 +1,19 @@
-<h1>Simple Tweet!</h1>
+<%= form_tag("/post_tweet/submit") do %>
+  <h1>Simple Tweet!</h1>
 
-<div>
-  <%= label_tag(:post_tweet, "Tweet it up:") %>
-</div>
+  <div>
+    <%= label_tag(:post_tweet, "Tweet it up:") %>
+  </div>
 
-<div>
-  <%= text_area_tag(:tweet_contents, "", placeholder: "Tweet goes here!", size: "65x10") %>
-</div>
+  <div>
+    <%= text_area_tag(:tweet_contents, "", placeholder: "Tweet goes here!", size: "65x10") %>
+  </div>
 
-<div>
-  <%= submit_tag("Blast that tweet!") %>
-</div>
+  <div>
+    <%= submit_tag("Blast that tweet!", :class => "button") %>
+  </div>
 
-<div>
-  <%= label_tag("(User profile info here)") %>
-</div>
+  <div>
+    <%= label_tag("(User profile info here)") %>
+  </div>
+<% end %>
