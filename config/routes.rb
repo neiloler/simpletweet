@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'post_tweet/index'
 
+  post "post_tweet/submit"
+
   root 'post_tweet#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
