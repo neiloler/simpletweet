@@ -3,7 +3,8 @@ class PostTweetController < ApplicationController
   end
 
   def submit
-    puts "BLASTED!"
+    puts "PARAMS!"
+    puts params[:tweet_contents]
     redirect_to :action => "index"
   end
 end
